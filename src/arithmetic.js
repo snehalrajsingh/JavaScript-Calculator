@@ -29,3 +29,5 @@ export function calculate(a, operator, b) {
     default: throw new Error("Unknown operator");
   }
 }
+
+// Member 1 - Arithmetic module updated
