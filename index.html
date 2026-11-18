@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <h1>Calculator</h1>
+    <input id="display" class="display" type="text" value="0" aria-label="Calculator display" readonly>
+
+    <section class="button-grid" aria-label="Calculator buttons">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="backspace">DEL</button>
+      <button class="utility" data-action="percent">%</button>
+      <button class="operator" data-operator="/">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-operator="*">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-operator="-">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="operator" data-operator="+">+</button>
+
+      <button class="utility" data-action="square">x²</button>
+      <button data-value="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="equals" data-action="equals">=</button>
+
+      <button class="utility wide" data-action="sqrt">√</button>
+      <button class="utility wide" data-action="sign">±</button>
+    </section>
+    <p id="message" class="message" aria-live="polite"></p>
+  </main>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
